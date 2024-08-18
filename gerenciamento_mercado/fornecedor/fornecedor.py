@@ -4,5 +4,5 @@ class Fornecedor:
         self.nome = nome
         self.endereco = endereco
         self.cnpj = cnpj
-fornecedor1 = Fornecedor("Nestlé", "Av. Paulista, 123 - SP", "77.377.074/0001-76")
-print(f'Os dados do fornecedor são: {fornecedor1.nome}, {fornecedor1.endereco} e {fornecedor1.cnpj}')
+#fornecedor1 = Fornecedor("Nestlé", "Av. Paulista, 123 - SP", "77.377.074/0001-76")
+#print(f'Os dados do fornecedor são: {fornecedor1.nome}, {fornecedor1.endereco} e {fornecedor1.cnpj}')
