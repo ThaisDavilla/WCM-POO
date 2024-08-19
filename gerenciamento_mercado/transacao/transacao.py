@@ -7,5 +7,9 @@ class Transacao:
         self.produto = produto
         self.quantidade = quantidade
 
+    def concluir(self):
+        #self.produto.vender(self.quantidade)
+        pass
+
     def __str__(self):
         return f"Data: {self.data} - Cliente: {self.cliente.nome} - Produto: {self.produto.nome} - Quantidade: {self.quantidade}"
