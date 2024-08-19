@@ -69,25 +69,6 @@ class Produto:
 
     def __str__(self):
         return (f"Nome: {self.nome_produto}, "
-                f"Fornecedores: {', '.join(self.fornecedores)}, "
+                f"Fornecedores: {', '.join(f.nome for f in self.fornecedores)}, "
                 f"Categoria: {self.categoria}, "
                 f"Quantidade em Estoque: {self.quantidade_estoque}")
-
-"""
-# Criando uma instância da classe Produto
-produto_arroz = Produto(
-    nome_produto='Arroz',
-    fornecedores=['Tio João', 'Camil'],
-    categoria='Alimentos',
-    quantidade_estoque=100
-)
-
-# Exibindo informações antes da venda
-print(produto_arroz)
-
-# Tentando realizar uma venda
-print(produto_arroz.vender(20))
-
-# Exibindo informações após a venda
-print(produto_arroz)
-"""

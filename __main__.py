@@ -15,5 +15,15 @@ if __name__ == "__main__":
     produto = Produto("Arroz", [fornecedor], "Alimentos", 25)
     mercado.adicionar_produto(produto)
 
-    transacao = Transacao(produto, cliente, 2)
+    transacao = Transacao(cliente, produto, 2)  # Certifique-se de que o cliente está antes do produto
     mercado.registrar_transacao(transacao)
+
+    # Imprimindo dados para verificar o sistema rodando corretamente
+    print("Cliente:")
+    print(cliente)
+
+    print("\nFornecedor:")
+    print(fornecedor)
+
+    print("\nTransação:")
+    print(transacao)
